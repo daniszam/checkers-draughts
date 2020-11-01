@@ -27,7 +27,8 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Lib,
+      Checker
   other-modules:
       Paths_checkers_draughts
   hs-source-dirs:
