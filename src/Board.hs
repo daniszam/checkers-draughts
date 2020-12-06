@@ -1,6 +1,9 @@
-module Board where
-import Data.Matrix
+module Board (Board (..)) where
+
 import Checker
+import Data.Matrix
 
-data Board = Board {matrix :: Matrix Checker -> Checker}
+newtype Board board = Board {mat :: Matrix Checker -> Checker}
 
+--create :: Board board
+--create = Board {mat = indentity 8}
